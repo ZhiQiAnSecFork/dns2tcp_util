@@ -1,5 +1,8 @@
 CC = gcc
 CFLAGS = -std=c99 -Wall -Wextra -O2 -static
+CPPFLAGS=-static 
+LDFLAGS=-static
+
 LIBS = -lm
 SRCS = dns2tcp.c
 OBJS = $(SRCS:.c=.o)
